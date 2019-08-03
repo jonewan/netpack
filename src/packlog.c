@@ -49,7 +49,7 @@ int writeDirInZip(const char *path, zipFile zf, int opt_compress_level, char *pa
 	return err;
 }
 
-int writeOneFilesInzip(char *filenameinzip, zipFile zf, int opt_compress_level, char *password) {
+int writeOneFilesInzip(const char *filenameinzip, zipFile zf, int opt_compress_level, char *password) {
 	zip_fileinfo zi = {0};
 	FILE * fin;//创建一个文件指针
 	int err = ZIP_OK;

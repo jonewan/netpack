@@ -195,7 +195,7 @@ int main(int argc, char ** argv)
 	if (opt_send == 2)//在接收模式下，用户输入的多余参数无效
 		arg_file_index = 0;
 
-	if (opt_zip_fileName == NULL) {//如果用户没有给出-f zip的名字，则默认生成“日期时间.cvtelog.zip”
+	if (opt_zip_fileName == NULL) {//如果用户没有给出-f zip的名字，则默认生成“日期时间.zip”
 		time_t now;
 		struct tm *timenow; //实例化tm结构指针    
 		time(&now);
@@ -206,7 +206,7 @@ int main(int argc, char ** argv)
 		strncpy(filename_try, opt_zip_fileName, MAXFILENAME - 1);//命令行参数最大长度为MAXFILENAME个
 		filename_try[MAXFILENAME] = '\0';
 	}
-	strcat(filename_try, ".cvtelog.zip");//统一命名为filename.cvtelog.zip
+	strcat(filename_try, ".zip");//统一命名为filename.zip
 
 	if (opt_overwrite == 2 && check_exist_file(filename_try) == 0) {//若用户给-a选项，但是文件不存在，则默认以覆盖创建形式打开zip文件
 			opt_overwrite = 1;

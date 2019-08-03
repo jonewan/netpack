@@ -1674,8 +1674,8 @@ options:");//listen for inbound:	np -l -p port [-options] [hostname] [port] [-f 
 	holler("\
 	-1\tCompress faster\n\
 	-9\tCompress better\n\
-	-a\tAppend to existing file.cvtelog.zip \n\
-	-o\tOverwrite existing file.cvtelog.zip \n\
+	-a\tAppend to existing file.zip \n\
+	-o\tOverwrite existing file.zip \n\
 	-f\tAssign the zip fileName \n\
 	-k\tpassword the zip file\n");
 #ifdef LISTEN_MODE //如果需要使用监听模式时定义LISTEN_MODE这个宏
@@ -1696,6 +1696,6 @@ options:");//listen for inbound:	np -l -p port [-options] [hostname] [port] [-f 
 	-v\tverbose [use twice to be more verbose]\n\
 	-w\tsecs	timeout for connects and final net reads\n\
 	-z\tzero-I/O mode [used for scanning]");
-	bail("\n\nAthor by jonewan at 2019/01/11\nAny question send email to i_wangjiahao@cvte.com\n");
+	bail("\n\nAthor by jonewan at 2019/01/11\nAny question send email to jonewan@yeah.net\n");
 } /* helpme */
 #endif /* HAVE_HELP */
